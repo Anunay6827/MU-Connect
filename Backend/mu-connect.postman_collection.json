@@ -1,0 +1,999 @@
+{
+	"info": {
+		"_postman_id": "859ae973-ef3c-4d36-8734-1c111af1623c",
+		"name": "SE Course",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "36596237"
+	},
+	"item": [
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"email\": \"se22uari086@mahindrauniversity.edu.in\",\r\n  \"password\": \"bhargav\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://peugmvvuvjhxdmupzycb.supabase.co/functions/v1/auth_login",
+							"protocol": "https",
+							"host": [
+								"peugmvvuvjhxdmupzycb",
+								"supabase",
+								"co"
+							],
+							"path": [
+								"functions",
+								"v1",
+								"auth_login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Signup",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"email\": \"se22uari078@mahindrauniversity.edu.in\",\r\n  \"name\": \"Krushik\",\r\n  \"password\": \"krushik\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://peugmvvuvjhxdmupzycb.supabase.co/functions/v1/auth_signup",
+							"protocol": "https",
+							"host": [
+								"peugmvvuvjhxdmupzycb",
+								"supabase",
+								"co"
+							],
+							"path": [
+								"functions",
+								"v1",
+								"auth_signup"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "User Info",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"user_id\": 9\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://peugmvvuvjhxdmupzycb.supabase.co/functions/v1/user_info",
+							"protocol": "https",
+							"host": [
+								"peugmvvuvjhxdmupzycb",
+								"supabase",
+								"co"
+							],
+							"path": [
+								"functions",
+								"v1",
+								"user_info"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "User Edit Info",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "user_id",
+									"value": "10",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "bhargav",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "name",
+									"value": "Bhargav",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "profile_picture",
+									"type": "file",
+									"src": []
+								}
+							]
+						},
+						"url": {
+							"raw": "https://peugmvvuvjhxdmupzycb.supabase.co/functions/v1/user_edit",
+							"protocol": "https",
+							"host": [
+								"peugmvvuvjhxdmupzycb",
+								"supabase",
+								"co"
+							],
+							"path": [
+								"functions",
+								"v1",
+								"user_edit"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "User Follow",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"user_id\": 9,\r\n  \"other_user_id\": 10,\r\n  \"type\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://peugmvvuvjhxdmupzycb.supabase.co/functions/v1/user_follow",
+							"protocol": "https",
+							"host": [
+								"peugmvvuvjhxdmupzycb",
+								"supabase",
+								"co"
+							],
+							"path": [
+								"functions",
+								"v1",
+								"user_follow"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "User Follow List",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"user_id\": 9,\r\n  \"type\": 0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://peugmvvuvjhxdmupzycb.supabase.co/functions/v1/user_follow_list",
+							"protocol": "https",
+							"host": [
+								"peugmvvuvjhxdmupzycb",
+								"supabase",
+								"co"
+							],
+							"path": [
+								"functions",
+								"v1",
+								"user_follow_list"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "User Search",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"text\": \"086\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://peugmvvuvjhxdmupzycb.supabase.co/functions/v1/user_search",
+							"protocol": "https",
+							"host": [
+								"peugmvvuvjhxdmupzycb",
+								"supabase",
+								"co"
+							],
+							"path": [
+								"functions",
+								"v1",
+								"user_search"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "User Profile Info",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"user_id\": 9,\r\n    \"profile_id\": 10\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://peugmvvuvjhxdmupzycb.supabase.co/functions/v1/user_profile_info",
+							"protocol": "https",
+							"host": [
+								"peugmvvuvjhxdmupzycb",
+								"supabase",
+								"co"
+							],
+							"path": [
+								"functions",
+								"v1",
+								"user_profile_info"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Blogs",
+			"item": [
+				{
+					"name": "Blogs Create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "author",
+									"value": "10",
+									"type": "text"
+								},
+								{
+									"key": "content",
+									"value": "Hi there",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": [],
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "https://peugmvvuvjhxdmupzycb.supabase.co/functions/v1/blogs_create",
+							"protocol": "https",
+							"host": [
+								"peugmvvuvjhxdmupzycb",
+								"supabase",
+								"co"
+							],
+							"path": [
+								"functions",
+								"v1",
+								"blogs_create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Blogs List",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"user_id\": 9,\r\n    \"profile_id\": 9\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://peugmvvuvjhxdmupzycb.supabase.co/functions/v1/blogs_list",
+							"protocol": "https",
+							"host": [
+								"peugmvvuvjhxdmupzycb",
+								"supabase",
+								"co"
+							],
+							"path": [
+								"functions",
+								"v1",
+								"blogs_list"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Blogs Like",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"user_id\": 9,\r\n    \"blog_id\": 2,\r\n    \"type\": 0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://peugmvvuvjhxdmupzycb.supabase.co/functions/v1/blogs_like",
+							"protocol": "https",
+							"host": [
+								"peugmvvuvjhxdmupzycb",
+								"supabase",
+								"co"
+							],
+							"path": [
+								"functions",
+								"v1",
+								"blogs_like"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Blogs Delete",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"user_id\": 9,\r\n    \"blog_id\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://peugmvvuvjhxdmupzycb.supabase.co/functions/v1/blogs_delete",
+							"protocol": "https",
+							"host": [
+								"peugmvvuvjhxdmupzycb",
+								"supabase",
+								"co"
+							],
+							"path": [
+								"functions",
+								"v1",
+								"blogs_delete"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Chats",
+			"item": [
+				{
+					"name": "Message Send",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "sender_id",
+									"value": "9",
+									"type": "text"
+								},
+								{
+									"key": "receiver_id",
+									"value": "10",
+									"type": "text"
+								},
+								{
+									"key": "content",
+									"value": "Testing for sockets",
+									"type": "text"
+								},
+								{
+									"key": "content_type",
+									"value": "0",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": [],
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "https://peugmvvuvjhxdmupzycb.supabase.co/functions/v1/chats_message_send",
+							"protocol": "https",
+							"host": [
+								"peugmvvuvjhxdmupzycb",
+								"supabase",
+								"co"
+							],
+							"path": [
+								"functions",
+								"v1",
+								"chats_message_send"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Message Delete",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"sender_id\": 9,\r\n    \"message_id\": 2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://peugmvvuvjhxdmupzycb.supabase.co/functions/v1/chats_message_delete",
+							"protocol": "https",
+							"host": [
+								"peugmvvuvjhxdmupzycb",
+								"supabase",
+								"co"
+							],
+							"path": [
+								"functions",
+								"v1",
+								"chats_message_delete"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Messages List",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"user_id\": 9,\r\n    \"chatter_id\": 10\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://peugmvvuvjhxdmupzycb.supabase.co/functions/v1/chats_message_list",
+							"protocol": "https",
+							"host": [
+								"peugmvvuvjhxdmupzycb",
+								"supabase",
+								"co"
+							],
+							"path": [
+								"functions",
+								"v1",
+								"chats_message_list"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Groups",
+			"item": [
+				{
+					"name": "Groups Create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "user_id",
+									"value": "9",
+									"type": "text"
+								},
+								{
+									"key": "name",
+									"value": "Class Group",
+									"type": "text"
+								},
+								{
+									"key": "bio",
+									"value": "Lorem ipsum is the dummy text",
+									"type": "text"
+								},
+								{
+									"key": "picture",
+									"type": "file",
+									"src": []
+								}
+							]
+						},
+						"url": {
+							"raw": "https://peugmvvuvjhxdmupzycb.supabase.co/functions/v1/groups_create",
+							"protocol": "https",
+							"host": [
+								"peugmvvuvjhxdmupzycb",
+								"supabase",
+								"co"
+							],
+							"path": [
+								"functions",
+								"v1",
+								"groups_create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Groups Delete",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"user_id\": 9,\r\n    \"group_id\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://peugmvvuvjhxdmupzycb.supabase.co/functions/v1/groups_delete",
+							"protocol": "https",
+							"host": [
+								"peugmvvuvjhxdmupzycb",
+								"supabase",
+								"co"
+							],
+							"path": [
+								"functions",
+								"v1",
+								"groups_delete"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Groups Details",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"user_id\": 9,\r\n    \"group_id\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://peugmvvuvjhxdmupzycb.supabase.co/functions/v1/groups_details",
+							"protocol": "https",
+							"host": [
+								"peugmvvuvjhxdmupzycb",
+								"supabase",
+								"co"
+							],
+							"path": [
+								"functions",
+								"v1",
+								"groups_details"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Groups Edit",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "group_id",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "name",
+									"value": "Updated Class Group",
+									"type": "text"
+								},
+								{
+									"key": "bio",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "picture",
+									"type": "file",
+									"src": []
+								}
+							]
+						},
+						"url": {
+							"raw": "https://peugmvvuvjhxdmupzycb.supabase.co/functions/v1/groups_edit",
+							"protocol": "https",
+							"host": [
+								"peugmvvuvjhxdmupzycb",
+								"supabase",
+								"co"
+							],
+							"path": [
+								"functions",
+								"v1",
+								"groups_edit"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Groups Exit",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"user_id\": 9,\r\n    \"group_id\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://peugmvvuvjhxdmupzycb.supabase.co/functions/v1/groups_exit",
+							"protocol": "https",
+							"host": [
+								"peugmvvuvjhxdmupzycb",
+								"supabase",
+								"co"
+							],
+							"path": [
+								"functions",
+								"v1",
+								"groups_exit"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Groups Member Add",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"admin_id\": 9,\r\n    \"group_id\": 1,\r\n    \"email_to_add\": \"se22uari078@mahindrauniversity.edu.in\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://peugmvvuvjhxdmupzycb.supabase.co/functions/v1/groups_member_add",
+							"protocol": "https",
+							"host": [
+								"peugmvvuvjhxdmupzycb",
+								"supabase",
+								"co"
+							],
+							"path": [
+								"functions",
+								"v1",
+								"groups_member_add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Groups Member Remove",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"admin_id\": 9,\r\n    \"group_id\": 1,\r\n    \"user_id_to_remove\": 10\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://peugmvvuvjhxdmupzycb.supabase.co/functions/v1/groups_member_remove",
+							"protocol": "https",
+							"host": [
+								"peugmvvuvjhxdmupzycb",
+								"supabase",
+								"co"
+							],
+							"path": [
+								"functions",
+								"v1",
+								"groups_member_remove"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Groups Message Delete",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"message_id\": 1,\r\n    \"user_id\": 9,\r\n    \"group_id\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://peugmvvuvjhxdmupzycb.supabase.co/functions/v1/groups_message_delete",
+							"protocol": "https",
+							"host": [
+								"peugmvvuvjhxdmupzycb",
+								"supabase",
+								"co"
+							],
+							"path": [
+								"functions",
+								"v1",
+								"groups_message_delete"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Groups Message List",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"group_id\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://peugmvvuvjhxdmupzycb.supabase.co/functions/v1/groups_message_list",
+							"protocol": "https",
+							"host": [
+								"peugmvvuvjhxdmupzycb",
+								"supabase",
+								"co"
+							],
+							"path": [
+								"functions",
+								"v1",
+								"groups_message_list"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Group Message Send",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "user_id",
+									"value": "9",
+									"type": "text"
+								},
+								{
+									"key": "group_id",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "content",
+									"value": "Hi",
+									"type": "text"
+								},
+								{
+									"key": "content_type",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": []
+								}
+							]
+						},
+						"url": {
+							"raw": "https://peugmvvuvjhxdmupzycb.supabase.co/functions/v1/groups_message_send",
+							"protocol": "https",
+							"host": [
+								"peugmvvuvjhxdmupzycb",
+								"supabase",
+								"co"
+							],
+							"path": [
+								"functions",
+								"v1",
+								"groups_message_send"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Server Test",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://peugmvvuvjhxdmupzycb.supabase.co/functions/v1/main",
+					"protocol": "https",
+					"host": [
+						"peugmvvuvjhxdmupzycb",
+						"supabase",
+						"co"
+					],
+					"path": [
+						"functions",
+						"v1",
+						"main"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Conversations List",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"user_id\": 9\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://peugmvvuvjhxdmupzycb.supabase.co/functions/v1/conversations_list",
+					"protocol": "https",
+					"host": [
+						"peugmvvuvjhxdmupzycb",
+						"supabase",
+						"co"
+					],
+					"path": [
+						"functions",
+						"v1",
+						"conversations_list"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Notifications Retrieval",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"receiver\": 9\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://peugmvvuvjhxdmupzycb.supabase.co/functions/v1/notification_retrieve",
+					"protocol": "https",
+					"host": [
+						"peugmvvuvjhxdmupzycb",
+						"supabase",
+						"co"
+					],
+					"path": [
+						"functions",
+						"v1",
+						"notification_retrieve"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
