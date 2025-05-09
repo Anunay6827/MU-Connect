@@ -37,7 +37,7 @@ Download the latest `mu-connect.apk` file and install it on your Android device 
 
 Here's a high-level overview of the key files and folders:
 
-### 🔹 Backend (`Backend/`)
+### Backend (`Backend/`)
 
 - `supabase/`  
   Contains configuration files and function handlers that serve as endpoints for various features.
@@ -48,7 +48,7 @@ Here's a high-level overview of the key files and folders:
 - `mu-connect.postman_collection.json`  
   Postman collection to test, debug, and understand all API endpoints and responses.
 
-### 🔹 Frontend (`Frontend/`)
+### Frontend (`Frontend/`)
 
 - `pubspec.yaml`  
   Defines Flutter/Dart dependencies and assets for the application.
