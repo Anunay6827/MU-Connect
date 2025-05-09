@@ -3,7 +3,7 @@
 
 # MU-Connect 📱
 
-Welcome to the official GitHub repository for **MU-Connect**, a student-centered social networking app designed for the Mahindra University community.
+Welcome to the GitHub repository for **MU-Connect**, a student-centered social networking app designed for the Mahindra University community.
 
 ---
 
