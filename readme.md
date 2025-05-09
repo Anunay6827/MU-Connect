@@ -1,62 +1,77 @@
 ![MU (2)](https://github.com/user-attachments/assets/031ad6f3-e82d-4c49-a181-3f023d66329e)
 
+
 # MU-Connect 📱
 
-Welcome to **MU-Connect** — your one-stop social platform designed exclusively for the Mahindra University community.
-
-This repository contains everything you need to know to understand, explore, and run the app on your local device.
+Welcome to the official GitHub repository for **MU-Connect**, a student-centered social networking app designed for the Mahindra University community.
 
 ---
 
-## 🔗 Quick Links
+## 🚀 About MU-Connect
 
-- 🎥 [Team Presentation Pitch Video](https://drive.google.com/file/d/1NORfbxyUyZkOAuYEZ-gPo2XpyZ9901h-/view?usp=drive_link)
-- 📘 Detailed Codebase Explanation: *[Coming Soon]*  
-- 📂 [Documentations Folder](./Documentations)  
-  Contains: Software Requirements Specification (SRS), Software Design Document (SDD), and Test Plan  
-- 🗂️ [Diagrams Folder](./Diagrams)  
-  Contains: Use Case Diagrams, State Charts, Activity Diagrams, and more
+MU-Connect is a dedicated platform for students to:
+- Share posts and media with their peers
+- Chat in real time with individuals and groups
+- Receive campus-wide notifications and updates
 
----
-
-## 📲 Install the App
-
-Download the **MU-Connect.apk** on your Android mobile device and install it to join the MU community.
-
-> ⚠️ *Account creation is currently restricted to users with a Mahindra University email ID (domain: `mahindrauniversity.edu.in`).*
+> Account creation is available exclusively for users with a Mahindra University email ID.
 
 ---
 
-## 🚀 How to Run Locally
+## 📱 Try It Out
 
-### ✅ Prerequisites
+Download the latest `.apk` and install it on your Android device to join the MU community!
 
-- [Flutter](https://flutter.dev/)
-- [Dart](https://dart.dev/)
-- [Android Studio](https://developer.android.com/studio) or [VS Code](https://code.visualstudio.com/)
-- [TypeScript](https://www.typescriptlang.org/)
-- [PostgreSQL](https://www.postgresql.org/)
+🎥 **Presentation Pitch Video**: [Watch here](https://drive.google.com/file/d/1NORfbxyUyZkOAuYEZ-gPo2XpyZ9901h-/view?usp=drive_link)
 
-### 📦 Setup Instructions
+📥 **A detailed breakdown of our code, and a complete demo of our app:** (TBD)
 
-1. **Create a Flutter project locally**  
-   Open a terminal and run:
-   ```bash
-   flutter create MU-Connect
 
- 2. **Replace Project Files**
-Navigate to the created folder.
+📚 **Documentation**:  
+- SRS, SDD, Test Plan – located in the `Documentations/` folder  
+- UML Diagrams – available in the `Diagrams/` folder  
 
-Now, copy and replace all matching files and folders from the Frontend directory of this repository.
-Keep other default files like assets/ and plugin files unchanged.
+---
 
-3. **Backend Setup**
-Place the contents of the backend folder anywhere in your local directory.
+## 🛠 How to Run Locally
 
-Replace the Supabase API key in the backend files with your own key from your Supabase project.
+### 1. Requirements
+- Flutter SDK
+- Dart SDK
+- Android Studio or VS Code
+- TypeScript
+- PostgreSQL
 
-4. **Run the App**
-Connect a physical Android device or use an emulator.
-Navigate to the MU-Connect/ directory and run:
+### 2. Replace Project Files  
+Navigate to the created folder:
+
+```bash
+cd MU-Connect
+```
+
+Now, copy and replace all matching files and folders from the `Frontend` directory of this repository.  
+_Keep other default files like `assets/` and plugin files unchanged._
+
+### 3. Backend Setup
+
+- Place the contents of the `backend` folder anywhere in your local directory.
+- Replace the Supabase API key in the backend files with your own key from your Supabase project.
+
+### 4. Run the App  
+Connect a physical Android device or use an emulator.  
+Navigate to the `MU-Connect/` directory and run:
+
 ```bash
 flutter run
+```
+
+---
+
+## 🛑 Important Note
+
+Account registration is restricted to users with an official Mahindra University email address (ending in `@mahindrauniversity.edu.in`).
+
+---
+
+Thank you for exploring **MU-Connect!** 💬  
+Feel free to contribute or raise issues if you encounter any problems.
