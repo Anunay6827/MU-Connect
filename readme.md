@@ -24,7 +24,7 @@ Download the latest `mu-connect.apk` file and install it on your Android device 
 
 🎥 **Presentation Pitch Video**: [Watch here](https://drive.google.com/file/d/1NORfbxyUyZkOAuYEZ-gPo2XpyZ9901h-/view?usp=drive_link)
 
-📥 **A detailed breakdown of our code, and a complete demo of our app:** (ETA: 11th May, 2025)
+📥 **A detailed breakdown of our code, and a complete demo of our app:** (Coming soon)
 
 
 📚 **Documentation**:  
